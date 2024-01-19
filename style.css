@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#title,
+#description {
+  color: rgb(158, 90, 99);
+  text-align: center;
+  font-size: x-large;
+}
+
+.container-sm {
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.calculator {
+  background-color: rgb(219, 219, 218);
+  width: 435px;
+  height: 500px;
+  border: 2px solid black;
+  margin-left: 20px !important;
+  padding: 5px 5px;
+  border: 3px solid #a9a8a8;
+  border-radius: 10px;
+}
+
+#displayinput {
+  grid-column: span 4 !important;
+  background-color: rgb(185, 185, 185) !important;
+  margin: 10px !important;
+  border: none;
+  width: 350px !important;
+  height: 57px !important;
+  margin-left: 7% !important;
+  padding: 25px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 6em);
+  width: 350px;
+  height: 400px;
+  border: none !important;
+  cursor: pointer;
+}
+
+.bttn {
+  background-color: transparent;
+  border: none;
+}
+
+.bttn00 {
+  background-color: transparent;
+  border: none;
+}
+
+.bttn0 {
+  background-color: transparent;
+  border: none;
+}
+
+.bttnEqual {
+  grid-column: span 2;
+  background-color: rgb(12, 111, 253) !important;
+  color: white;
+  width: 198px;
+  height: 48px;
+  border: none !important;
+  margin-top: 22% !important;
+}
+
+#clear {
+  color: red;
+}
+
+#multiply {
+  color: blue;
+}
+
+#divide {
+  color: blue;
+}
+
+#subtraction {
+  color: blue;
+}
+
+#addition {
+  color: blue;
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 335px;
+    height: 450px;
+    margin-left: 15px !important;
+    padding: 5px 5px;
+    border: 3px solid #a9a8a8;
+    border-radius: 10px;
+  }
+
+  #displayinput {
+    grid-column: span 4 !important;
+    margin: 10px !important;
+    width: 250px !important;
+    height: 57px !important;
+    margin-left: 7% !important;
+    padding: 20px;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 5em);
+    width: 350px;
+    height: 400px;
+  }
+
+  .bttn00 {
+    margin-top: -35px !important;
+  }
+
+  .bttn0 {
+    margin-top: -35px !important;
+  }
+
+  .bttnEqual {
+    grid-column: span 2;
+    width: 138px;
+    height: 38px;
+    margin-top: 10% !important;
+  }
+}
